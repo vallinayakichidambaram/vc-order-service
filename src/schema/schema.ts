@@ -34,13 +34,9 @@ export const resolvers = {
       },
 
       Mutation: {
-        placeOrder: async ({
-            customerName,
-            restaurantId,
-            item,
-            quantity
-        }: PlaceOrderInput) => {
-        //   const { customerName, restaurantId, item, quantity } = args;
+        placeOrder: async (_: any,args: PlaceOrderInput) => {
+          console.log(args)
+          const { customerName, restaurantId, item, quantity } = args;
     
           const result = await pool.query(
             `INSERT INTO orders (customer_name, restaurant_id, item, quantity)

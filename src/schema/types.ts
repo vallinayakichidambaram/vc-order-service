@@ -1,5 +1,5 @@
 export type PlaceOrderInput = {
-    customerName?: string;
+    customerName: string;
     restaurantId: number;
     item: string;
     quantity: number;
