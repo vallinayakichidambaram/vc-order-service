@@ -1,19 +1,20 @@
 {
   "name": "vc-order-service",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-   "dev": "ts-node-dev --respawn src/server.ts"
+    "dev": "ts-node-dev --respawn src/server.ts"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com-personal:vallinayakichidambaram/vc-order-service.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Valli Nayaki Chidambaram",
   "license": "ISC",
-  "description": "",
+  "description": "Repo for Order Service",
   "dependencies": {
+    "apollo-server": "^3.13.0",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "graphql": "^16.10.0",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@types/express": "^5.0.1",
     "@types/node": "^22.14.1",
+    "@types/pg": "^8.11.13",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.3"
   }
